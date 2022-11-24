@@ -72,7 +72,7 @@ class Tris
         foreach($this->winningSeries as $serie) {
             if (
                 array_diff($serie, $this->positions('X')) == []
-                || array_diff($serie, $this->positions('Y')) == []
+                || array_diff($serie, $this->positions('O')) == []
             ) {
                 return $serie;
             }
@@ -89,6 +89,6 @@ class Tris
             }
         }
 
-        return ' ';
+        return $position;
     }
 }
